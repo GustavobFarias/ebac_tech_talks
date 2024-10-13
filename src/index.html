@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBAC Tech Talks</title>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
@@ -15,10 +15,73 @@
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__test">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>LOCALIZAÇÃO</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2024 às 19hrs
+                    </li>
+                </ul>
+                <a class="button button--primary" href="#">Garanta sua vaga</a>
+            </div> 
         </div>
     </header>
+
+    <section class="event">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">
+                    O Front-end é essencial para a criação de experiências web atrativas e funcionais. Ele combina habilidades de design e programação para garantir que as interações do usuário sejam agradáveis e eficazes, trabalhando em conjunto com o Back-end para integrar a lógica do servidor aos elementos visuais apresentados aos usuários.
+                </p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Ui Ux</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni fugiat quia maiores dolor reprehenderit numquam atque unde sapiente ipsum deserunt saepe illum aliquam provident veniam, expedita temporibus asperiores cupiditate?
+                </p>
+            </div>
+            <img class="event__image" src="images/ui-ux.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    A Data Science é um campo que combina técnicas analíticas avançadas e conhecimentos de domínio para transformar dados em insights significativos, permitindo que as empresas tomem decisões baseadas em evidências e se mantenham competitivas em um ambiente cada vez mais orientado por dados.
+                </p>
+            </div>
+            <img class="event__image" src="images/data.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-end</h2>
+                <p class="event__details__description">
+                    O Back-end é a espinha dorsal de qualquer aplicação web, gerenciando a lógica de negócios, o acesso a dados e a comunicação entre o servidor e o cliente. Ele é essencial para garantir que a experiência do usuário seja fluida e funcional, proporcionando suporte e estrutura para o que é apresentado no Front-end.
+                </p>
+            </div>
+            <img class="event__image" src="images/backend.png" alt="Front-end">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
